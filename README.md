@@ -60,7 +60,7 @@ Ama olur da "Oyunu illa da bilgisayarıma indirerek yerel dosya üzerinden oynam
 * **Müzik ve Ses Efektlerini Editleme:** Movavi Video Editor 15 Plus
 * ***Kod Yazımında Yardım:** ChatGPT ve Gemini
 
-> *Projede yapay zekanın nasıl kullanıldığını görmek için [AI.md](docs/AI.md) dosyasına göz atabilirsiniz. Daha önce de belirtildiği gibi, oyunun yaratıcılık gerektiren hiçbir kısımında yapay zekaya başvurulmamakla birlikte kod yazımında yapay zeka araçlarının kullanım şekli bu dosyada daha detaylı bir şekilde belirtilmiştir.
+> *Projede yapay zekanın nasıl kullanıldığını görmek için [AI.md](AI.md) dosyasına göz atabilirsiniz. Daha önce de belirtildiği gibi, oyunun yaratıcılık gerektiren hiçbir kısımında yapay zekaya başvurulmamakla birlikte kod yazımında yapay zeka araçlarının kullanım şekli bu dosyada daha detaylı bir şekilde belirtilmiştir.
 
 ---
 
