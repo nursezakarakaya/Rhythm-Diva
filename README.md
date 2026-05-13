@@ -81,7 +81,7 @@ https://nursezakarakaya.github.io/Rhythm-Diva/
 * **Kullanılan Müzikler:**
   * i feel this is the best harmony ive ever written
 
-  https://www.youtube.com/watch?v=plEw2WNkd9Y&list=PLJD11Dss33p3OzPJZx8y9Nb8__4eoEJ9g&index=58
+  https://www.youtube.com/watch?v=plEw2WNkd9Y
   
   * iroha(sasaki) - Meltdown [HD Instrumental]
 
@@ -89,7 +89,7 @@ https://nursezakarakaya.github.io/Rhythm-Diva/
 
   * 【8-bit】inabakumori (feat. Kaai Yuki) - Lagtrain
 
-  https://www.youtube.com/watch?v=d9dVy74hfbE&list=PLF3q_oV6HfxfRCJxQ8nULYvoEtSdTVxs-
+  https://www.youtube.com/watch?v=d9dVy74hfbE
 
   * 【歌ってみた】フロートプレイ(Float Play) cover / 一色
 
