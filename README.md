@@ -6,9 +6,9 @@
 
 ![oyun ss 1](ss1.png "Oyundan örnek görüntü 1")
 
-![oyun ss 2](ss2.png "Oyundan örnek görüntü 2")
-
 ![oyun ss 3](ss3.png "Oyundan örnek görüntü 3")
+
+![oyun ss 2](ss2.png "Oyundan örnek görüntü 2")
 
 ---
 
