@@ -151,20 +151,6 @@ Hiçbir dönüşüm yapmaz.
 null == undefined   // true 😬
 null === undefined  // false ✔️
 ```
-
----
-
-## 🎯 Senin kodunda neden `===` kullanıyoruz?
-
-```js
-if (metinIndex === 2)
-```
-
-Burada garanti etmek istiyoruz ki:
-
-* metinIndex gerçekten **number 2** olsun
-* `"2"` gibi bir şey olmasın
-
 ---
 
 ## 🔧 C ile farkı
