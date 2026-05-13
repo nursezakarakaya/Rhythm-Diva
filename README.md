@@ -24,7 +24,7 @@
 
 * Oyunun en başında gelen Visual Novel kısmı, ekranın herhangi bir yerine **Mouse ile tıklanılarak** ilerletilir. Eğer hikaye kısımlarını atlamak isterseniz sağ alt köşede bulunan *"ATLA"* butonuna da tıklayabilirsiniz. Hikaye kısmı bittikten sonra oyunun asıl kısmı olan ritim oyunu kısmına geçilecektir.
 
-* Ritim oyunu başladığında şarkının ritmine göre sağdan sola soğru notalar akmaya başlar. Notalar tam **Hitline** (Hedef Çizgisi) üzerine geldiğinde klavyedeki ok tuşları kullanılarak notalara zamanında basılmalıdır.
+* Ritim oyunu başladığında şarkının ritmine göre sağdan sola doğru notalar akmaya başlar. Notalar tam **Hitline** (Hedef Çizgisi) üzerine geldiğinde klavyedeki ok tuşları kullanılarak notalara zamanında basılmalıdır.
 
 * Skorlar tamamen zamanlamanın ne kadar iyi olduğuna göre verilir.
 
