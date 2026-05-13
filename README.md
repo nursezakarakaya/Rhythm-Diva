@@ -45,7 +45,9 @@
 ## "Nereden Oynayabilirim?"
 
 Oyunu hiç indirmeden, web tarayıcınız üzerinden şu linke tıklayarak Github Pages üzerinden oynayabilirsiniz:
+https://nursezakarakaya.github.io/Rhythm-Diva/
 
+itch.io üzerinden oynamak isterseniz de:
 
 Ama olur da "Oyunu illa da bilgisayarıma indirerek yerel dosya üzerinden oynamak istiyorum" derseniz:
 1. Github'dan bu reponun tamamını bilgisayarınıza indirip zip dosyasını başka bir klasörün içine çıkartın.
