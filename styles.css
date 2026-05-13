@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;              /* ekran yüksekliği */
+    display: flex;
+    justify-content: center;    /* yatay ortalama */
+    align-items: center;        /* dikey ortalama */
+    background-color: #222;
+}
+
+canvas {
+    border:0px solid #000000;
+    background-color: #000000;
+}
+
+@font-face {
+    font-family: 'Gabriola';
+    src: url('fonts/Gabriola.ttf');
+}
+
+@font-face {
+    font-family: 'Ink Free';
+    src: url('fonts/Inkfree.ttf');
+}
+
+@font-face {
+    font-family: 'Bradley Hand ITC';
+    src: url('fonts/BRADHITC.ttf');
+}
+
+@font-face {
+    font-family: 'Lucida Console';
+    src: url('fonts/lucon.ttf');
+}
