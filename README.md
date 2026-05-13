@@ -2,7 +2,7 @@
 
 ![oyun logosu](images/logo.png "Logo")
 
-### Rhythm Diva, **HTML5 Canvas** ve **JavaScript** kullanılarak geliştirilmiş, içinde Visual Novel (Görsel Roman) ögeleri de barındıran bir ritim oyunudur.
+### Rhythm Diva; **HTML5 Canvas** ve **JavaScript** kullanılarak geliştirilmiş, yarı Visual Novel (Görsel Roman) yarı ritim oyunu tadında, okul projem için sınırlı bir süre içerisinde tasarladığım bir oyundur.
 
 ![oyun ss 1](ss1.png "Oyundan örnek görüntü 1")
 
