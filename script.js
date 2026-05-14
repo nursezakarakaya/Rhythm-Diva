@@ -852,7 +852,7 @@ function drawRitim(ctx) {
         for (let i = notalar.length - 1; i >= 0; i--) {
             let nota = notalar[i];
         
-            // Notaları sağdan sola doğru kaydırma (Hız = 10)
+            // Notaları sağdan sola doğru kaydırma (Hız = 15)
             nota.x -= 15; 
             // Notayı ekrana çizme
             ctx.drawImage(okResimleri[nota.serit], nota.x - 35, seritY[nota.serit] - 35, 70, 70);
