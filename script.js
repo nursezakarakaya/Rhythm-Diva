@@ -765,7 +765,7 @@ function drawRitim(ctx) {
         ctx.globalAlpha = fadeAlpha;
         bg.update();
 
-        let vurusIndex = Math.floor(lagtrain.currentTime / 0.408) % 2;
+        let vurusIndex = Math.floor(lagtrain.currentTime / 0.408) % 2; //dans animasyonları için
 
         let mcDans = (vurusIndex === 0) ? mc1 : mc2;
         ctx.drawImage(mcDans, -50, 340, 360, 480);
