@@ -1,6 +1,7 @@
 # RHYTHM DIVA ♫
 
 ![oyun logosu](images/logo.png "Logo")
+<img align="center" src="images/logo.png" alt="Logo"/>
 
 ### Rhythm Diva; **HTML5 Canvas** ve **JavaScript** kullanılarak geliştirilmiş, yarı Visual Novel (Görsel Roman) yarı ritim oyunu tadında, okul projem için sınırlı bir süre içerisinde tasarladığım bir oyundur.
 
