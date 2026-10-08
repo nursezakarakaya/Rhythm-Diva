@@ -103,4 +103,4 @@ https://nursezakarakaya.github.io/Rhythm-Diva/
 
 ---
 
-### İyi eğlenceler :D !!! *-Paprika★* *2026*
+### İyi eğlenceler :D !!! *-Gündüz★* *2026*
