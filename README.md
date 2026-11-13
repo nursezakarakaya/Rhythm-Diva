@@ -49,7 +49,7 @@
 ## "Nereden Oynayabilirim?"
 
 * Oyun itch.io'da mevcut!! Hiç indirmeden web tarayıcınız üzerinden oynayabilirsiniz ^^
-https://paprikagndz.itch.io/rhythm-diva
+https://robotenshi.itch.io/rhythm-diva
 
 * (Alternatif) Aynı şekilde Github Pages üzerinden de yine indirmeden oynayabilirsiniz:
 https://nursezakarakaya.github.io/Rhythm-Diva/
