@@ -784,7 +784,7 @@ function startRitim() {
     ritimSkor = 0;
     ritimKombo = 0;
     bg = new component(1280, 720, "images/bg.png", 0, 0);
-    logo = new component(600, 600, "images/logo.png", 340, 60);
+    logo = new component(550, 550, "images/logo.png", (oyunalani.canvas.width - 550) / 2, (oyunalani.canvas.height - 550) / 2);
     tutorialResmi = new component(600, 700, "images/tutorial.png", 340, 10);
     // Logonun fade ile girmesi için
     fadeAlpha = 0;
@@ -823,8 +823,9 @@ function drawRitim(ctx) {
         logo.update();
 
         ctx.fillStyle = "#962a00";
-        ctx.font = "bold 50px Gabriola";
-        ctx.fillText(" ★ by RoboTenshi ★", 465, 630);
+        ctx.font = "bold 40px Gabriola";
+        ctx.textAlign = "center";
+        ctx.fillText("★ by RoboTenshi ★", 640, 630);
 
         ctx.restore();
     }
