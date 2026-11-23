@@ -222,6 +222,7 @@ let metinler2 = [
 let metinler = metinler1; // Başlangıçta metinler1'i kullanıyoruz o yüzden, 2. kısımda metinler2 dicez
 
 const STATES = { //4 farklı aşama var
+    YUKLENIYOR: "YUKLENIYOR",
     VN1: "VN1",
     RITIM: "RITIM",
     VN2: "VN2",
@@ -242,7 +243,7 @@ window.addEventListener('keydown', function(event) {
     }
 });
 
-let currentGameState = STATES.VN1; // Oyun VN1 ile başliyo!!!!!!
+let currentGameState = STATES.YUKLENIYOR; // Oyun önce yükleme ile başliyo!!!!!!
 
 setInterval(function() { //RİTİM OYUNUNDA NOTALARIN SÜREKLİ KAYMASI İÇİN SAYAYI OTOMATİK YENİDEN ÇİZİYO
     drawScene(); 
@@ -250,22 +251,6 @@ setInterval(function() { //RİTİM OYUNUNDA NOTALARIN SÜREKLİ KAYMASI İÇİN 
 
 // Tüm resimler yüklendiğinde oyunu başlat
 function preloadImages() {
-    for (let i = 0; i < preloadList.length; i++) {
-        let img = new Image();
-
-        img.onload = function() {
-            yuklenenResimSayisi++;
-
-            if (yuklenenResimSayisi === preloadList.length) {
-                startGame();
-            }
-        };
-
-        img.src = preloadList[i];
-    }
-}
-
-function startGame() {
     oyunalani = {
         canvas: document.createElement("canvas"),
         start: function() {
@@ -297,11 +282,29 @@ function startGame() {
 
     oyunalani.start();
 
+    for (let i = 0; i < preloadList.length; i++) {
+        let img = new Image();
+
+        img.onload = function() {
+            yuklenenResimSayisi++;
+
+            if (yuklenenResimSayisi === preloadList.length) {
+                startGame();
+            }
+        };
+
+        img.src = preloadList[i];
+    }
+}
+
+function startGame() {
+    currentGameState = STATES.VN1;
     slide = new component(1280, 720, images[slaytIndex], 0, 0);
     skip = new component(120, 60, "images/skip.png", 1145, 647, "image");
 }
 
 function clickleme(event) {
+    if (currentGameState === STATES.YUKLENIYOR) return;
     
     let rect = oyunalani.canvas.getBoundingClientRect();
     let mouseX = event.clientX - rect.left;
@@ -400,17 +403,47 @@ function component(width, height, src, x, y) {
 }
 
 function drawScene() {
+    if (!oyunalani) return;
 
     let ctx = oyunalani.context;
     oyunalani.clear();
 
-    if (currentGameState === STATES.VN1 || currentGameState === STATES.VN2) {
+    if (currentGameState === STATES.YUKLENIYOR){
+        drawYukleniyor(ctx);
+    }
+    else if (currentGameState === STATES.VN1 || currentGameState === STATES.VN2) {
         drawVN(ctx);
-    } else if (currentGameState === STATES.RITIM) {
+    } 
+    else if (currentGameState === STATES.RITIM) {
         drawRitim(ctx);
-    } else if(currentGameState === STATES.SON){
+    } 
+    else if(currentGameState === STATES.SON){
         drawSon(ctx);
     }
+}
+
+function drawYukleniyor(ctx) {
+    ctx.save();
+
+    // nokta döngüsü (her 500ms'de bir değişir)
+    let noktaSayisi = (Math.floor(Date.now() / 500) % 3) + 1;
+    let noktalar = ".".repeat(noktaSayisi);
+
+    // "Yükleniyor..."
+    ctx.fillStyle = "white";
+    ctx.font = "bold 52px Gabriola";
+    ctx.textBaseline = "middle";
+    let baseWidth = ctx.measureText("Yükleniyor").width;
+    ctx.textAlign = "left";
+    ctx.fillText("Yükleniyor" + noktalar, 640 - baseWidth / 2, 335);
+
+    // altındaki yazı
+    ctx.fillStyle = "#c8a2ff";
+    ctx.font = "26px Gabriola";
+    ctx.textAlign = "center";
+    ctx.fillText("Biraz bekle! Assetler indiriliyor", 640, 395);
+
+    ctx.restore();
 }
 
 function drawVN(ctx){
@@ -791,7 +824,7 @@ function drawRitim(ctx) {
 
         ctx.fillStyle = "#962a00";
         ctx.font = "bold 50px Gabriola";
-        ctx.fillText(" ★ by paprikagndz ★", 465, 630);
+        ctx.fillText(" ★ by RoboTenshi ★", 465, 630);
 
         ctx.restore();
     }
